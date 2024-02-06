@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collage website</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt=""></a>
+            <div class="nav-links">
+                <!-- <i class="fa-solid fa-xmark" onclick="hidemenu()"></i> -->
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT US</a></li>
+                    <li> <a href="login.html">LOGIN</a></li>
+                </ul>
+
+            </div>
+            <!-- <i class="fa-solid fa-bars" onclick="showmenu()"></i> -->
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10694.449040698988!2d73.72729789935545!3d18.616428497628906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1705424151075!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+
+    <section class="contact-us">
+
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <span>
+                        <h5>ADRESS:- University of Engineering and management, gurukul Campus</h5>
+                        <p>Jaipur,rajastan,india </p>
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <h5>CONTACT NO:- +91 2373636633</h5>
+                        <p>TIME:- monday to saturday, 10AM to 6PM </p>
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <h5>EMAIL:- eduford@gmail.com</h5>
+                        <p>email us your query </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form_handeler.php" method="post">
+            <input type="text" name="name" placeholder="Enter the name" required>
+            <input type="email" name="email" placeholder="Enter your address" required>
+            <input type="text" name="subject" placeholder="enter the sudject" required>
+            <textarea rows="8" name="message" placeholder="message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">send message</button>
+        </form>
+        </div>
+    </section>
+
+
+
+
+    
+
+
+
+    <!-- footer  -->
+
+    <section class="footer">
+
+        <h4>About us</h4>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+
+
+
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
