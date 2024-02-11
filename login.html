@@ -15,13 +15,14 @@
       integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
       crossorigin="anonymous"
     />
+    
   </head>
   <body>
     <section class="sub-header">
       <nav>
         <a href="index.html"> <img src="images/logo.png" alt="" /></a>
         <div class="nav-links">
-          <!-- <i class="fa-solid fa-xmark" onclick="hidemenu()"></i> -->
+           <!-- <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>  -->
           <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -31,26 +32,56 @@
             <li><a href="login.html">LOGIN</a></li>
           </ul>
         </div>
-        <!-- <i class="fa-solid fa-bars" onclick="showmenu()"></i> -->
+        <!-- <i class="fa-solid fa-bars" onclick="showmenu()"></i>  -->
       </nav>
-      <h1>LOGIN</h1>
-      <form action="">
+    
+
+      <form action="" method="post">
         <div class="container">
+            <h1>login</h1>
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required> <br><br>
+            <input type="text" placeholder="Enter Username" name="uname" id="username" > 
         
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+            <input type="password" placeholder="Enter Password" name="psw" id="password">
         
-            <button type="submit" href="login.html">Login</button>
-            <button type="submit" href="register.html">register</button>
-            
-          </div>
+             <!-- <button type="submit" value="login" onclick="func(event)" formaction="">login</button>  --> 
+             
+             <button  type="submit" value="login" onclick="func(event)" formaction="">login</button>
+             <br> <br>
+             <button  type="submit" value="register" formaction="register.html"> register</button>  
+             <!-- <input type="submit" value="login" onclick="func()"> <br>
+
+            <input type="submit" value="register" formaction="register.html">  -->
+          </div>           
         </form>
     </section>
 
-    <!-- footer  -->
+    <footer>
 
+      <h5>About us</h5>
+       <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+     </footer>
+  <script>
+    function func(event) {
+        event.preventDefault(); 
+
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === 'khushal@gmail.com' && password === '1') {
+            alert("Successfully logged in!");
+            window.location.href = "index.html";
+        } else {
+            alert("Invalid username or password");
+            
+        }
+    }
+
+      document.getElementById("loginForm").addEventListener("submit", func);
+  </script>
    
   </body>
-</html>
+</html> 
+
+
